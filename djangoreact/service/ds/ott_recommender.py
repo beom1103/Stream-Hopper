@@ -16,15 +16,15 @@ def get_initialized():
     ott_score = pd.DataFrame(
         {
             "name": [
-                "netflix_basic",
-                "netflix_standard",
-                "netflix_premium",
-                "disney_montly",
-                "disney_yearly",
-                "amazon_montly",
-                "hulu_adv",
-                "hulu_no_adv",
-                "hulu_live",
+                "Netflix Basic",
+                "Netflix Standard",
+                "Netflix Premium",
+                "Disney+ Monthly",
+                "Disney+ Yearly",
+                "Amazon Monthly",
+                "Hulu Advertising",
+                "Hulu No Advertising",
+                "Hulu + LIVE TV",
             ],
             "score": [0] * 9,
         }
@@ -56,7 +56,8 @@ def get_ott_genre():
         "Family",
         "Animation",
         "Comedy",
-        "Action-Adventure",
+        "Action",
+        "Adventure",
         "Nature",
         "ComingofAge",
         "Fantasy",
@@ -66,7 +67,6 @@ def get_ott_genre():
         "Docuseries",
         "ScienceFiction",
         "Historical",
-        "Music",
         "Musical",
     ]
     hulu_genre_top = [
@@ -84,14 +84,15 @@ def get_ott_genre():
         "Family",
         "Romance",
         "Kid",
-        "Lifestyle&Culture",
+        "Culture",
     ]
 
     netflix_genre_top = [
         "International",
         "Drama",
         "Comedy",
-        "Action-Adventure",
+        "Action",
+        "Adventure",
         "Romance",
         "Documentary",
         "Independent",
@@ -101,8 +102,7 @@ def get_ott_genre():
         "Kid",
         "Horror",
         "Docuseries",
-        "Music&Musicals",
-        "Stand-UpComedy",
+        "Musical",
     ]
     return amazon_genre_top, disney_genre_top, hulu_genre_top, netflix_genre_top
 
