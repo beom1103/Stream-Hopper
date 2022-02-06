@@ -146,8 +146,8 @@ cython_debug/
 secrets.josn
 djangoreact/secrets.json
 
-.svd
-djangoreact/svd
 
 .flake8
 pyproject.toml
+
+secrets.json
