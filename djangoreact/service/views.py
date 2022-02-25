@@ -157,7 +157,6 @@ class ContentRecommendServiceListView(ListAPIView):
             qs = Contents.objects.filter(tmdb_id=result[i][0])[0:1]
             queryset = queryset | qs
         
-        print(queryset)
                
         queryset = queryset.prefetch_related(
             Prefetch('contentrecommendation_set', 
